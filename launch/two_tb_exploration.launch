@@ -67,8 +67,23 @@
     <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name ="teleop_twist_keyboard"/>
   </group> -->
 
+  <node pkg="tf2_ros" type="static_transform_publisher"
+    name="double_$(arg first_tb3)_tf_broadcaster_base_footprint"
+    args="0 0 0 0 0 0 /$(arg first_tb3)/base_footprint /$(arg first_tb3)/$(arg first_tb3)/base_footprint " />
+  <node pkg="tf2_ros" type="static_transform_publisher"
+    name="double_$(arg first_tb3)_tf_broadcaster_scan"
+    args="0 0 0 0 0 0 /$(arg first_tb3)/$(arg first_tb3)/base_scan /$(arg first_tb3)/base_scan " />
+
+  <node pkg="tf2_ros" type="static_transform_publisher"
+    name="double_$(arg second_tb3)_tf_broadcaster_base_footprint"
+    args="0 0 0 0 0 0 /$(arg second_tb3)/base_footprint /$(arg second_tb3)/$(arg second_tb3)/base_footprint " />
+  <node pkg="tf2_ros" type="static_transform_publisher"
+    name="double_$(arg second_tb3)_tf_broadcaster_scan"
+    args="0 0 0 0 0 0 /$(arg second_tb3)/$(arg second_tb3)/base_scan /$(arg second_tb3)/base_scan " />
+
+
   <!-- Add the following transforms to resolve map and namespace mismatch -->
-  <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg first_tb3)_tf_broadcaster_base_footprint"  args="0 0 0 0 0 0 /$(arg first_tb3)/base_footprint /$(arg first_tb3)/$(arg first_tb3)/base_footprint "/>
+  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg first_tb3)_tf_broadcaster_base_footprint"  args="0 0 0 0 0 0 /$(arg first_tb3)/base_footprint /$(arg first_tb3)/$(arg first_tb3)/base_footprint "/>
   <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg first_tb3)_tf_broadcaster_base_link"       args="0 0 0 0 0 0 /$(arg first_tb3)/base_link /$(arg first_tb3)/$(arg first_tb3)/base_link "/>
   <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg first_tb3)_tf_broadcaster_left_wheel"      args="0 0 0 0 0 0 /$(arg first_tb3)/wheel_left_link /$(arg first_tb3)/$(arg first_tb3)/wheel_left_link "/>
   <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg first_tb3)_tf_broadcaster_right_wheel"     args="0 0 0 0 0 0 /$(arg first_tb3)/wheel_right_link /$(arg first_tb3)/$(arg first_tb3)/wheel_right_link "/>
@@ -85,6 +100,6 @@
   <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg second_tb3)_tf_broadcaster_scan"            args="0 0 0 0 0 0 /$(arg second_tb3)/base_scan /$(arg second_tb3)/$(arg second_tb3)/base_scan "/>
   <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg second_tb3)_tf_broadcaster_caster"          args="0 0 0 0 0 0 /$(arg second_tb3)/caster_back_link /$(arg second_tb3)/$(arg second_tb3)/caster_back_link "/>
   <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg second_tb3)_tf_broadcaster_imu"             args="0 0 0 0 0 0 /$(arg second_tb3)/imu_link /$(arg second_tb3)/$(arg second_tb3)/imu_link "/>
-  <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg second_tb3)_tf_broadcaster_map"             args="0 0 0 0 0 0 /$(arg second_tb3)/map /$(arg second_tb3)/$(arg second_tb3)/map "/>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg second_tb3)_tf_broadcaster_map"             args="0 0 0 0 0 0 /$(arg second_tb3)/map /$(arg second_tb3)/$(arg second_tb3)/map "/> -->
 
 </launch>
