@@ -485,7 +485,8 @@ class FrontExpl
 
 int main(int argc, char * argv[])
 {
-    ros::init(argc, argv, "tb3_0_FE_node");
+    ros::init(argc, argv, "tb3_0_FE");
+    // ros::init(argc, argv, "tb3_0_FE_node");
     FrontExpl FE;
     FE.main_loop();
     ros::spin();
