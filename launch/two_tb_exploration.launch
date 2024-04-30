@@ -67,19 +67,11 @@
     <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name ="teleop_twist_keyboard"/>
   </group> -->
 
-  <node pkg="tf2_ros" type="static_transform_publisher"
-    name="double_$(arg first_tb3)_tf_broadcaster_base_footprint"
-    args="0 0 0 0 0 0 /$(arg first_tb3)/base_footprint /$(arg first_tb3)/$(arg first_tb3)/base_footprint " />
-  <node pkg="tf2_ros" type="static_transform_publisher"
-    name="double_$(arg first_tb3)_tf_broadcaster_scan"
-    args="0 0 0 0 0 0 /$(arg first_tb3)/$(arg first_tb3)/base_scan /$(arg first_tb3)/base_scan " />
+  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg first_tb3)_tf_broadcaster_base_footprint" args="0 0 0 0 0 0 /$(arg first_tb3)/base_footprint /$(arg first_tb3)/$(arg first_tb3)/base_footprint " />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg first_tb3)_tf_broadcaster_scan" args="0 0 0 0 0 0 /$(arg first_tb3)/$(arg first_tb3)/base_scan /$(arg first_tb3)/base_scan " />
 
-  <node pkg="tf2_ros" type="static_transform_publisher"
-    name="double_$(arg second_tb3)_tf_broadcaster_base_footprint"
-    args="0 0 0 0 0 0 /$(arg second_tb3)/base_footprint /$(arg second_tb3)/$(arg second_tb3)/base_footprint " />
-  <node pkg="tf2_ros" type="static_transform_publisher"
-    name="double_$(arg second_tb3)_tf_broadcaster_scan"
-    args="0 0 0 0 0 0 /$(arg second_tb3)/$(arg second_tb3)/base_scan /$(arg second_tb3)/base_scan " />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg second_tb3)_tf_broadcaster_base_footprint" args="0 0 0 0 0 0 /$(arg second_tb3)/base_footprint /$(arg second_tb3)/$(arg second_tb3)/base_footprint " />
+  <node pkg="tf2_ros" type="static_transform_publisher" name="double_$(arg second_tb3)_tf_broadcaster_scan" args="0 0 0 0 0 0 /$(arg second_tb3)/$(arg second_tb3)/base_scan /$(arg second_tb3)/base_scan " /> -->
 
 
   <!-- Add the following transforms to resolve map and namespace mismatch -->

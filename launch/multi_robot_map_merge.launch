@@ -55,7 +55,7 @@
   <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg first_tb3)_tf_broadcaster"  args="0 0 0 0 0 0 /map /$(arg first_tb3)/map 100"/>
   <node pkg="tf" type="static_transform_publisher" name="world_to_$(arg second_tb3)_tf_broadcaster" args="0 0 0 0 0 0 /map /$(arg second_tb3)/map 100"/>
   <node pkg="tf" type="static_transform_publisher" name="world_to_new_$(arg first_tb3)_map" args="0 0 0 0 0 0 /map /new_tb3_0_map 100"/>
-  <node pkg="tf" type="static_transform_publisher" name="world_to__new_$(arg second_tb3)_map" args="0 0 0 0 0 0 /map /new_tb3_1_map 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="world_to_new_$(arg second_tb3)_map" args="0 0 0 0 0 0 /map /new_tb3_1_map 100"/>
 </launch>
 
 <!-- See original documentation -->

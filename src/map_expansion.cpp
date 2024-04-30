@@ -4,8 +4,9 @@
 ///
 /// PUBLISHES:
 ///     /new_tb3_0_map (nav_msgs/OccupancyGrid): Publishes an expanded map with
-///     new width, height and origin /new_tb3_1_map (nav_msgs/OccupancyGrid):
-///     Publishes an expanded map new width, height and origin
+///     new width, height and origin 
+///     /new_tb3_1_map (nav_msgs/OccupancyGrid): Publishes an expanded map with
+///     new width, height and origin
 /// SUBSCRIBES:
 ///     /tb3_0/map (nav_msgs/OccupancyGrid): Reads the map created by SLAM
 ///     /tb3_1/map (nav_msgs/OccupancyGrid): Reads the map created by SLAM
