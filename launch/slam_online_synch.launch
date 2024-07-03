@@ -15,7 +15,7 @@
   </node> -->
 
   <!-- Run gmapping's slam_gmapping node -->
-  <node pkg="gmapping" type="slam_gmapping" name="tb3_gmapping_$(arg ns)" output="screen">
+  <node pkg="gmapping" type="slam_gmapping" name="tb3_gmapping_$(arg ns)">
     <rosparam command="load" file="$(find turtlebot3_slam)/config/gmapping_params.yaml" />
     <param name="base_frame" value="$(arg ns)/base_footprint" />
     <param name="odom_frame" value="$(arg ns)/odom" />
